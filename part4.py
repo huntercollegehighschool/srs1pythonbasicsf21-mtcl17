@@ -12,5 +12,14 @@ possibletriangle(8, 12, 13)
 --> True                        #the result returned is the Boolean value True(not the string "True")
 """
 
-def possibletriangle(side1, side2, side3): #side1, side2, and side3 will all be integers
-  pass #delete this line when you start typing your code here
+def possibletriangle(side1, side2, side3): 
+  if side1 + side2 > side3:
+    if side1 + side3 > side2:
+      if side2 + side3 > side1:
+        return True
+      else: 
+        return False
+    else:
+      return False
+  else:
+    return False
